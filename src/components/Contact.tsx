@@ -33,6 +33,16 @@ export function Contact() {
                                 </div>
                             </a>
 
+                            <a href="tel:470-706-5277" className="flex flex-col items-center gap-4 p-6 rounded-xl bg-white border-2 border-white group hover:bg-white/90 transition-all shadow-xl shadow-white/20">
+                                <div className="p-4 rounded-full bg-black text-white group-hover:scale-110 transition-transform">
+                                    <Phone className="w-6 h-6" />
+                                </div>
+                                <div className="text-center">
+                                    <p className="text-sm text-black/70 font-semibold">24/7 Service</p>
+                                    <p className="text-xl font-bold text-black group-hover:text-black transition-colors">470-706-5277</p>
+                                </div>
+                            </a>
+
                             <a href="mailto:Jonathandraincleaning78@gmail.com" className="flex flex-col items-center gap-4 p-6 rounded-xl bg-white/5 border border-white/10 group hover:border-primary/50 transition-all">
                                 <div className="p-4 rounded-full bg-white/10 text-white group-hover:bg-primary group-hover:text-black transition-all">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>

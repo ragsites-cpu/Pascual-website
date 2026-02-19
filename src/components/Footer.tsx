@@ -37,6 +37,10 @@ export function Footer() {
                                 <a href="tel:818-689-0512" className="hover:text-white transition-colors">818-689-0512</a>
                             </li>
                             <li className="flex flex-col mt-2">
+                                <span className="text-xs text-primary font-bold">24/7 SERVICE</span>
+                                <a href="tel:470-706-5277" className="hover:text-white transition-colors">470-706-5277</a>
+                            </li>
+                            <li className="flex flex-col mt-2">
                                 <span className="text-xs text-primary font-bold">EMAIL</span>
                                 <a href="mailto:Jonathandraincleaning78@gmail.com" className="hover:text-white transition-colors">Jonathandraincleaning78@gmail.com</a>
                             </li>

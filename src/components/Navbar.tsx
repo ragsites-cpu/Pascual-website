@@ -66,6 +66,11 @@ export function Navbar() {
                         <Phone className="mr-2 h-4 w-4" />
                         818-689-0512
                     </Button>
+                    <Button className="bg-white text-black hover:bg-white/90 font-bold rounded-full shadow-lg shadow-white/20 border-2 border-white">
+                        <Phone className="mr-2 h-4 w-4" />
+                        470-706-5277
+                        <span className="ml-2 text-base font-extrabold">24/7</span>
+                    </Button>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -104,6 +109,9 @@ export function Navbar() {
                             <div className="flex flex-col gap-3 mt-4">
                                 <Button className="w-full bg-primary text-black font-bold">
                                     Call 818-689-0512
+                                </Button>
+                                <Button className="w-full bg-white text-black hover:bg-white/90 font-bold shadow-lg shadow-white/20 border-2 border-white">
+                                    Call 470-706-5277 (24/7)
                                 </Button>
                             </div>
                         </div>
