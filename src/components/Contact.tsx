@@ -23,7 +23,7 @@ export function Contact() {
                         </p>
 
                         <div className="grid sm:grid-cols-2 gap-6">
-                            <a href="tel:818-689-0512" className="flex flex-col items-center gap-4 p-6 rounded-xl bg-white/5 border border-white/10 group hover:border-primary/50 transition-all">
+                            <a href="tel:818-689-0512" onClick={() => { if (typeof window !== "undefined" && window.gtag) { window.gtag("event", "call_button_click", { event_category: "contact", event_label: "contact_section" }); } }} className="flex flex-col items-center gap-4 p-6 rounded-xl bg-white/5 border border-white/10 group hover:border-primary/50 transition-all">
                                 <div className="p-4 rounded-full bg-primary text-black group-hover:scale-110 transition-transform">
                                     <Phone className="w-6 h-6" />
                                 </div>

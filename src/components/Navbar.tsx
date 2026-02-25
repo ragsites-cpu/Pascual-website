@@ -62,15 +62,19 @@ export function Navbar() {
                             {link.name}
                         </Link>
                     ))}
-                    <Button className="bg-primary text-black hover:bg-primary/90 font-bold rounded-full">
-                        <Phone className="mr-2 h-4 w-4" />
-                        818-689-0512
-                    </Button>
-                    <Button className="bg-white text-black hover:bg-white/90 font-bold rounded-full shadow-lg shadow-white/20 border-2 border-white">
-                        <Phone className="mr-2 h-4 w-4" />
-                        470-706-5277
-                        <span className="ml-2 text-base font-extrabold">24/7</span>
-                    </Button>
+                    <a href="tel:818-689-0512" onClick={() => { if (typeof window !== "undefined" && window.gtag) { window.gtag("event", "call_button_click", { event_category: "contact", event_label: "navbar_desktop" }); } }}>
+                        <Button className="bg-primary text-black hover:bg-primary/90 font-bold rounded-full">
+                            <Phone className="mr-2 h-4 w-4" />
+                            818-689-0512
+                        </Button>
+                    </a>
+                    <a href="tel:470-706-5277" onClick={() => { if (typeof window !== "undefined" && window.gtag) { window.gtag("event", "call_button_click", { event_category: "contact", event_label: "navbar_desktop_247" }); } }}>
+                        <Button className="bg-white text-black hover:bg-white/90 font-bold rounded-full shadow-lg shadow-white/20 border-2 border-white">
+                            <Phone className="mr-2 h-4 w-4" />
+                            470-706-5277
+                            <span className="ml-2 text-base font-extrabold">24/7</span>
+                        </Button>
+                    </a>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -107,12 +111,16 @@ export function Navbar() {
                                 </Link>
                             ))}
                             <div className="flex flex-col gap-3 mt-4">
-                                <Button className="w-full bg-primary text-black font-bold">
-                                    Call 818-689-0512
-                                </Button>
-                                <Button className="w-full bg-white text-black hover:bg-white/90 font-bold shadow-lg shadow-white/20 border-2 border-white">
-                                    Call 470-706-5277 (24/7)
-                                </Button>
+                                <a href="tel:818-689-0512" onClick={() => { if (typeof window !== "undefined" && window.gtag) { window.gtag("event", "call_button_click", { event_category: "contact", event_label: "navbar_mobile" }); } }}>
+                                    <Button className="w-full bg-primary text-black font-bold">
+                                        Call 818-689-0512
+                                    </Button>
+                                </a>
+                                <a href="tel:470-706-5277" onClick={() => { if (typeof window !== "undefined" && window.gtag) { window.gtag("event", "call_button_click", { event_category: "contact", event_label: "navbar_mobile_247" }); } }}>
+                                    <Button className="w-full bg-white text-black hover:bg-white/90 font-bold shadow-lg shadow-white/20 border-2 border-white">
+                                        Call 470-706-5277 (24/7)
+                                    </Button>
+                                </a>
                             </div>
                         </div>
                     </motion.div>

@@ -1,3 +1,5 @@
+"use client";
+
 import { Wrench } from "lucide-react";
 import Link from "next/link";
 
@@ -34,7 +36,7 @@ export function Footer() {
                         <ul className="space-y-2 text-sm text-muted-foreground">
                             <li className="flex flex-col">
                                 <span className="text-xs text-primary font-bold">EMERGENCY 24/7</span>
-                                <a href="tel:818-689-0512" className="hover:text-white transition-colors">818-689-0512</a>
+                                <a href="tel:818-689-0512" onClick={() => { if (typeof window !== "undefined" && window.gtag) { window.gtag("event", "call_button_click", { event_category: "contact", event_label: "footer" }); } }} className="hover:text-white transition-colors">818-689-0512</a>
                             </li>
                             <li className="flex flex-col mt-2">
                                 <span className="text-xs text-primary font-bold">24/7 SERVICE</span>
